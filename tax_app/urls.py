@@ -3,7 +3,7 @@ from tax_app.views import taxViewSet
 from rest_framework import routers
 
 routers = routers.DefaultRouter()
-router.register(r'taxScheme', taxViewSet)
+routers.register(r'taxScheme', taxViewSet)
 
 
 urlpatterns = [
