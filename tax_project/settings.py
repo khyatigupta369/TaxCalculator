@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# added rest_framework and tax_app
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -75,13 +75,8 @@ WSGI_APPLICATION = 'tax_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
+# PostGres Db added here 
+# config as follows
 # tax_project/settings.py
 DATABASES = {
     'default': {
@@ -93,8 +88,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

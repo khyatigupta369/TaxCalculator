@@ -2,4 +2,5 @@
 from django.contrib import admin
 from .models import TaxationScheme
 
+# built-in portal registeration
 admin.site.register(TaxationScheme)
