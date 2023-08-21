@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m-ao$k$$rtx+swik&^cm&s1x-801p4y=ezsqpico9lf-ugdz%0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['Localhost', 'Khyatigupta369.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', 'Khyatigupta369.pythonanywhere.com']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'tax_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
