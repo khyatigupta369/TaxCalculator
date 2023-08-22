@@ -20,11 +20,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+import environ
+
+env = environ.Env()
+environ.Env().read_env()
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m-ao$k$$rtx+swik&^cm&s1x-801p4y=ezsqpico9lf-ugdz%0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'Khyatigupta369.pythonanywhere.com']
 
@@ -89,6 +94,15 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+# Render PostgreSQL DataBase live 
+
+import dj_database_url
+
+DATABASES = {
+    'default': dj_database_url.parse(env('DATABASE_URL'))
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
