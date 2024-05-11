@@ -29,7 +29,7 @@ environ.Env().read_env()
 SECRET_KEY = 'django-insecure-m-ao$k$$rtx+swik&^cm&s1x-801p4y=ezsqpico9lf-ugdz%0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -84,16 +84,16 @@ WSGI_APPLICATION = 'tax_project.wsgi.application'
 # PostGres Db added here 
 # config as follows
 # tax_project/settings.py
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgre123',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgre123',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Render PostgreSQL DataBase live 
 
